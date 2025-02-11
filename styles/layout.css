@@ -1,20 +1,22 @@
 #app {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 30% 70%;
 
   height: 100vh;
   overflow: hidden;
   background-color: #131516;
 }
 
-main {
+aside {
 
-  padding: 2rem;
+  padding: 1rem;
+  overflow: hidden;
 
-  .main-container {
+  .aside-container {
     background-image: url(../assets/Background.png);
-    height: 45.5rem;
-    width: 25rem;
+    
+    height: 45.4rem;
+    max-width: 27rem;
     background-size: cover;
     border-radius: 12px;
      
@@ -47,4 +49,36 @@ main {
   }
 
   }
+}
+
+main {
+  overflow: auto;
+  padding: 3rem;
+  
+
+ .main-container {
+
+  padding: 6rem;
+  background-color: #212427;
+  
+  
+  max-height: 100rem;
+  max-width: 80rem;
+  background-size: cover;
+  border-radius: 12px;
+  margin-left: auto;
+
+
+  h1 {
+    font-family: "Baloo 2", serif;
+    color: #F9F9F9;
+    font-size: 1.75rem;
+    padding: 2rem;
+  }
+
+  & .about {
+    padding: 2rem;
+    
+  }
+}
 }

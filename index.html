@@ -18,8 +18,8 @@
 </head>
 <body>
   <div id="app">
-    <main>
-      <div class="main-container">
+    <aside>
+      <div class="aside-container">
 
         <header>
           <img src="assets/Logo.png" alt="ícone de festa">
@@ -30,19 +30,70 @@
           <p>Crie um convite digital para o seu evento</p>
         </header>
 
-      
-
-      
       </div>
-    </main>
+    </aside>
 
-    <aside>
-      <div class="aside-container">
+    <main>
+      <div class="main-container">
+
+          <h1>Crie seu convite</h1>
+
+
+
+          <form action="method">
+            <fieldset class="about">
+              <legend>
+               <img src="assets/calendar.svg" alt="ícone de calendário">
+                Sobre o evento
+              </legend>
+
+              <div class="name-event">
+                <label for="title">Título</label>
+                 <input id="title" type="text" placeholder="Nome do evento">  
+              </div>
+
+              <div class="date">
+                <label for="start">Início</label>
+                <input id="start" type="datetime-local">
+
+                <label for="finish">Fim</label>
+                <input id="finis" type="datetime-local">
+              </div>
+
+              <div class="type">
+                <label for="type">Tipo</label>
+
+                <div class="in-person">
+                <input type="button" id="in person">
+                <img src="assets/building-2.svg" alt="ícone de prédio">
+                <p>Presencial</p>
+                </div>
+
+                <div class="online">
+                <input type="button" id="online">
+                <img src="assets/video.svg" alt="ícone de cámera">
+                <p>Online</p>
+                </div>
+
+              </div>
+
+              <div class="local">
+                <label for="local">Local</label>
+                <input type="text" id="local" placeholder="Link ou endereço">
+              </div>
+
+              <div class="description">
+                <label for="description">Descriçao</label>
+                <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+              </div>
+
+            </fieldset>
+          </form>
         
   
         
       </div>
-    </aside>
+    </main>
 
   </div>
 </body>

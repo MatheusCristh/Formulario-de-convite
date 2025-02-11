@@ -1,0 +1,35 @@
+@import url(fields/index.css);
+
+form {
+  margin-top: 2rem;
+}
+
+fieldset {
+   border: none;
+
+   display: grid;
+   gap: 1.5rem
+}
+
+legend {
+  font-family: "Baloo 2", serif;
+  color: #F9F9F9;
+  font-weight: bold;
+  font-size: 1.2rem;
+  
+ 
+  img {
+    width: 24px;
+    height: 24px;
+    
+  }
+
+}
+
+label {
+
+ font-family: "Open sans", serif;
+ font-size: 14px;
+ color: #C8CDD0;
+ margin-bottom: .25rem;
+}
